@@ -1,4 +1,4 @@
-# omnibase/agenda
+# omnipack/agenda
 
 Dates for the sites built on [omnisense/omnibase](https://github.com/glitchr-omnisense/omnibase):
 a harpist's concerts, a violinist's, a school's open days, a shop's late openings - where they
@@ -6,7 +6,7 @@ happen, with whom, what is played, where the tickets are; the calendar visitors 
 the "add to my calendar" links, the same dates as JSON for other sites and apps, and the dates
 read from where they are kept: a Google Calendar the artist fills in from her phone, an agency's
 feed, a former Squarespace site, another omnibase site. It is a Symfony bundle
-(`Base\Agenda\AgendaBundle`) on the core 3 or 4, with its back office on omnibase/admin.
+(`Base\Agenda\AgendaBundle`) on the core 3 or 4, with its back office on omnipack/admin.
 
 An `Event` **is** an omnibase `Thread` (a JOINED subclass): a title (the concert's name), a
 headline, an excerpt, the text, tags, owners, a slug, publish states and scheduling, revisions,

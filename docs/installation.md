@@ -8,11 +8,11 @@ order: 10
 ## Requirements
 
 What `composer.json` requires: PHP 8.2 or later, `doctrine/orm` 2.15 or 3,
-`omnisense/omnibase` 7.0 or later 7.x, `omnibridge/symfony` 3.0 or later, `omnibase/admin` 2.x,
+`omnisense/omnibase` 7.0 or later 7.x, `omnibridge/symfony` 3.0 or later, `omnipack/admin` 2.x,
 `doctrine/doctrine-bundle` 2.13 or 3,
 `twig/intl-extra` 3 (the templates' date filters), and `symfony/config`, `console`,
 `dependency-injection`, `form`, `http-client` (reading the calendars), `http-kernel`,
-`security-bundle` and `string` 6, 7 or 8. It suggests omnibase/newsletter: the coming dates in
+`security-bundle` and `string` 6, 7 or 8. It suggests omnipack/newsletter: the coming dates in
 its monthly digest.
 
 ## The bundle
@@ -40,7 +40,7 @@ agenda_controller:
     type: attribute
     prefix: /
 
-# the back office's Google Calendar page (omnibase/admin)
+# the back office's Google Calendar page (omnipack/admin)
 agenda_admin_controller:
     resource: "@AgendaBundle/src/Controller/Admin/CalendarController.php"
     type: attribute

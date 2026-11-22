@@ -58,6 +58,6 @@ Kept in the core's setting bag by `IcsImporter`: `agenda.ics` (the address paste
 
 `config/services.php` autowires and autoconfigures `src/` but `DependencyInjection/`, `Entity/`,
 `Enum/`, `Model/`, `Controller/Admin/`, `Admin/`, `Digest/` and the bundle class;
-`Controller/Client/` is tagged `controller.service_arguments`; with omnibase/admin,
-`Controller/Admin/` and `Admin/`; with omnibase/newsletter's `DigestSourceInterface`, `Digest/`.
+`Controller/Client/` is tagged `controller.service_arguments`; with omnipack/admin,
+`Controller/Admin/` and `Admin/`; with omnipack/newsletter's `DigestSourceInterface`, `Digest/`.
 `SyncCommand` is `#[AsCommand]`, `SitemapListener` `#[AsEventListener]`.

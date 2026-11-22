@@ -1,16 +1,21 @@
 {
-    "name": "omnibase/agenda",
+    "name": "omnipack/agenda",
     "description": "Concert dates and venues for omnibase: an Event is a Thread; the agenda page, ICS feeds and imports, Google Calendar links, JSON-LD MusicEvent.",
     "type": "symfony-bundle",
     "license": "MIT",
-    "authors": [{"name": "Marco Meyer", "email": "marco.meyer@glitchr.io"}],
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "doctrine/orm": "^2.15|^3.0",
         "doctrine/doctrine-bundle": "^2.13|^3.0",
         "omnibridge/symfony": "^3.0",
         "omnisense/omnibase": "^7.0",
-        "omnibase/admin": "^2.0",
+        "omnipack/admin": "^2.0",
         "symfony/config": "^6.0|^7.0|^8.0",
         "symfony/console": "^6.0|^7.0|^8.0",
         "symfony/dependency-injection": "^6.0|^7.0|^8.0",
@@ -27,14 +32,21 @@
         "phpunit/phpunit": "^11.5",
         "symfony/clock": "^6.2|^7.0|^8.0"
     },
+    "replace": {
+        "omnibase/agenda": "self.version"
+    },
     "suggest": {
-        "omnibase/newsletter": "Adds the coming dates to the newsletter's digest (Digest\\AgendaDigestSource)."
+        "omnipack/newsletter": "Adds the coming dates to the newsletter's digest (Digest\\AgendaDigestSource)."
     },
     "autoload": {
-        "psr-4": {"Base\\Agenda\\": "./src"}
+        "psr-4": {
+            "Base\\Agenda\\": "./src"
+        }
     },
     "autoload-dev": {
-        "psr-4": {"Base\\Agenda\\Tests\\": "./tests"}
+        "psr-4": {
+            "Base\\Agenda\\Tests\\": "./tests"
+        }
     },
     "extra": {
         "branch-alias": {

@@ -34,7 +34,7 @@ Translations: the domains `agenda` and `entities`, ICU, in English, French and G
 
 ## In the newsletter's digest
 
-With omnibase/newsletter installed, `Base\Agenda\Digest\AgendaDigestSource` (tagged
+With omnipack/newsletter installed, `Base\Agenda\Digest\AgendaDigestSource` (tagged
 `newsletter.digest_source`) gives its digest a part named `agenda`: each date between the two
 days, its title, a line - "cancelled" when it is, the day and hour in the letter's language, the
 venue, the ensemble and conductor -, its page and its start.

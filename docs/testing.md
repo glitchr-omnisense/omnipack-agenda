@@ -18,7 +18,7 @@ user does not), which runs inside a host application and is skipped elsewhere.
 In omnisense/omnibase's harness, this checkout mounted over the package:
 
 ```bash
-docker run --rm --network none -v "$PWD":/srv/demo/vendor/omnibase/agenda:ro omnisense/omnibase-harness test agenda
+docker run --rm --network none -v "$PWD":/srv/demo/vendor/omnipack/agenda:ro omnisense/omnibase-harness test agenda
 ```
 
 ```

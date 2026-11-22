@@ -5,7 +5,7 @@ order: 38
 
 # The back office
 
-Loaded when omnibase/admin is installed. The two CRUDs carry omnibase/admin's
+Loaded when omnipack/admin is installed. The two CRUDs carry omnipack/admin's
 `#[OpenToAdmins]`: `ROLE_ADMIN` creates, edits and deletes, and uses their own actions.
 
 ## Dates

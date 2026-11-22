@@ -34,7 +34,7 @@ the house that stays.
 ## Install
 
 ```bash
-composer require omnibase/agenda
+composer require omnipack/agenda
 ```
 
 Under Symfony it runs on the core's Symfony host: Composer brings `omnisense/omnibase` 7.0 and
@@ -60,7 +60,7 @@ agenda_controller:
 ```
 
 ```yaml
-# config/routes.yaml - the back office's Google Calendar page (omnibase/admin)
+# config/routes.yaml - the back office's Google Calendar page (omnipack/admin)
 agenda_admin_controller:
     resource: "@AgendaBundle/src/Controller/Admin/CalendarController.php"
     type: attribute
@@ -316,13 +316,13 @@ does.
 The back office gets `Event` and `Venue` CRUDs (duplicate a date as a draft,
 for the next one of a tour; read the calendars now), the Google Calendar
 page (`Controller\Admin\CalendarController`) and a dashboard widget,
-`agenda_upcoming`, with the next five dates. When omnibase/newsletter is
+`agenda_upcoming`, with the next five dates. When omnipack/newsletter is
 installed, `Digest\AgendaDigestSource` puts the coming dates in its digest.
 
 The two CRUDs are written by the site's administrator (`ROLE_ADMIN`), not by
-the super-admin only: they carry omnibase/admin's `#[OpenToAdmins]` -
+the super-admin only: they carry omnipack/admin's `#[OpenToAdmins]` -
 creating, editing, deleting, and the dates' own `duplicate` and `sync`. The
-attribute is omnibase/admin's from 7474f85.
+attribute is omnipack/admin's from 7474f85.
 
 ## Tests
 
